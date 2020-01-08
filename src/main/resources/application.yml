@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.92.153.252/bangbang?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=UTC
+    username: bangbang
+    password: bangbang
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 30m
